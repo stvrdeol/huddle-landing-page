@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        * {
+            margin: 0rem;
+            padding: 0rem;
+        }
+
+        body {
+            background-color: hsl(257, 40%, 49%);
+            background-image: url(images/bg-desktop.svg);
+            color: white;
+            font-family: Poppins;
+        }
+
+        .main-container {
+            padding: 3rem 10rem;
+        }
+
+        .logo-img {
+            width: 15rem;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 4rem;
+        }
+
+        .text-container {
+            padding-left: 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-heading {
+            font-size: 3.6rem;
+            padding-top: 4rem;
+            font-weight: 600;
+        }
+
+        .para1 {
+            font-size: 1.4rem;
+            padding-top: 2rem;
+            padding-bottom: 1.4rem;
+        }
+
+        .illustration-img {
+            width: 100%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .social {
+            width: 4rem;
+            margin-left: 1rem;
+            cursor: pointer;
+            transition: all 0.20s;
+        }
+
+        .social:hover {
+            border: 2px solid hsl(300, 69%, 71%);
+            border-radius: 60%;
+        }
+
+        .btn {
+            width: 12rem;
+            height: 3.5rem;
+            border-radius: 3rem;
+            color: hsl(257, 40%, 49%);
+            background-color: white;
+            border: none;
+            transition: all 0.20s;
+            font-size: 1.6rem;
+        }
+
+        .btn:hover {
+            color: white;
+            cursor: pointer;
+            background-color: hsl(300, 69%, 71%);
+        }
+
+        @media screen and (max-width:480px) {
+            .main-container {
+                padding: 1rem;
+                justify-content: center;
+                align-items: center;
+            }
+            html{
+                font-size: 50%;
+            }
+            .main {
+                grid-template-columns: 1fr;
+            }
+            .img-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .text-container{
+                align-items: center;
+                justify-content: center;
+            }
+            .footer {
+                justify-content: center;
+                margin-top: 5rem;
+            }
+
+        }
+    </style>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            <img src="images/logo.svg" alt="none" class="logo-img">
+        </div>
+        <div class="main">
+            <div class="img-container">
+                <img src="images/illustration-mockups.svg" alt="none" class="illustration-img">
+            </div>
+            <div class="text-container">
+                <h1 class="main-heading">Build The Community Your Fans Will Love</h1>
+                <p class="para1">Huddle re-imagines the way we build communities. You have
+                    your voice, but so does your audience.
+                    Create connections with users as you engage in genuine discussion.
+                </p>
+                <button class="btn">Register</button>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="facebook.png" alt="none" class="social">
+            <img src="instagram.png" alt="none" class="social">
+            <img src="images/ntwitter.png" alt="none" class="social">
+        </div>
+    </div>
+</body>
+
+</html>
